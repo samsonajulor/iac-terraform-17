@@ -16,19 +16,19 @@ preferred_number_of_private_subnets = 4
 
 environment = "dev"
 
-ami = "ami-09e67e426f25ce0d7"
+ami = "ami-0574da719dca65348"
 
-keypair = "devops_samsonajulor"
+keypair = "samson_aws_key-pair"
 
 master-password = "$Amson1234"
 
 master-username = "samsonajulor"
 
-account_no = "727708324964"
+account_no = "020854412448"
 
 tags = {
   Enviroment      = "production" 
   Owner-Email     = "samsonajulor@gmail.com"
   Managed-By      = "Terraform"
-  Billing-Account = "727708324964"
+  Billing-Account = "020854412448"
 }
