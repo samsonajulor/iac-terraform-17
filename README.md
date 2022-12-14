@@ -9,3 +9,11 @@ sudo apt install graphviz
 
 ## Read More about terrafrom graph
 https://www.terraform.io/docs/cli/commands/graph.html
+
+- [Install AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
+
+- Configure AWS IAM credentials
+
+- Install Terraform and Terraform extension
+
+- Install AWS extension
