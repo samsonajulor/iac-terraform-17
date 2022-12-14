@@ -13,9 +13,9 @@ resource "aws_security_group" "ext-alb-sg" {
   }
 
   ingress {
-    description = "HTTPS"
-    from_port   = 22
-    to_port     = 22
+    description = "HTTP"
+    from_port   = 443
+    to_port     = 443
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
   }
@@ -39,8 +39,8 @@ resource "aws_security_group" "ext-alb-sg" {
 
 # security group for bastion, to allow access into the bastion host from you IP
 resource "aws_security_group" "bastion_sg" {
-  name        = "vpc_web_sg"
-  vpc_id = aws_vpc.main.id
+  name        = "bastion_sg"
+  vpc_id      =  aws_vpc.main.id
   description = "Allow incoming HTTP connections."
 
   ingress {
@@ -107,7 +107,7 @@ resource "aws_security_group_rule" "inbound-bastion-ssh" {
 }
 
 
-# security group for ialb, to have acces only from nginx reverser proxy server
+# security group for alb, to have access only from nginx reverser proxy server
 resource "aws_security_group" "int-alb-sg" {
   name   = "my-alb-sg"
   vpc_id = aws_vpc.main.id
@@ -133,6 +133,7 @@ resource "aws_security_group_rule" "inbound-ialb-https" {
   from_port                = 443
   to_port                  = 443
   protocol                 = "tcp"
+  cidr_blocks              = ["0.0.0.0/0"]
   source_security_group_id = aws_security_group.nginx-sg.id
   security_group_id        = aws_security_group.int-alb-sg.id
 }
@@ -176,7 +177,6 @@ resource "aws_security_group_rule" "inbound-web-ssh" {
   source_security_group_id = aws_security_group.bastion_sg.id
   security_group_id        = aws_security_group.webserver-sg.id
 }
-
 
 # security group for datalayer to alow traffic from websever on nfs and mysql port and bastiopn host on mysql port
 resource "aws_security_group" "datalayer-sg" {

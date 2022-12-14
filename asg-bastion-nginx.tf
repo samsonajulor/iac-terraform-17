@@ -1,11 +1,11 @@
 # creating sns topic for all the auto scaling groups
-resource "aws_sns_topic" "david-sns" {
+resource "aws_sns_topic" "samson-sns" {
   name = "Default_CloudWatch_Alarms_Topic"
 }
 
 
 # creating notification for all the auto scaling groups
-resource "aws_autoscaling_notification" "david_notifications" {
+resource "aws_autoscaling_notification" "samson_notifications" {
   group_names = [
     aws_autoscaling_group.bastion-asg.name,
     aws_autoscaling_group.nginx-asg.name,
@@ -19,7 +19,7 @@ resource "aws_autoscaling_notification" "david_notifications" {
     "autoscaling:EC2_INSTANCE_TERMINATE_ERROR",
   ]
 
-  topic_arn = aws_sns_topic.david-sns.arn
+  topic_arn = aws_sns_topic.samson-sns.arn
 }
 
 
@@ -42,7 +42,7 @@ resource "aws_launch_template" "bastion-launch-template" {
   key_name = var.keypair
 
   placement {
-    availability_zone = "random_shuffle.az_list.result"
+    availability_zone = "${random_shuffle.az_list.result}"
   }
 
   lifecycle {
@@ -108,7 +108,7 @@ resource "aws_launch_template" "nginx-launch-template" {
   key_name = var.keypair
 
   placement {
-    availability_zone = "random_shuffle.az_list.result"
+    availability_zone = "${random_shuffle.az_list.result}"
   }
 
   lifecycle {

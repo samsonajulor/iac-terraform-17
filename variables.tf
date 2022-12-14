@@ -46,12 +46,14 @@ variable "tags" {
   default     = {}
 }
 
-
+variable "environment" {
+  type        = string
+  description = "The environment name"
+}
 variable "ami" {
   type        = string
   description = "AMI ID for the launch template"
 }
-
 
 variable "keypair" {
   type        = string

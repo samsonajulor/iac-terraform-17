@@ -18,18 +18,17 @@ environment = "dev"
 
 ami = "ami-09e67e426f25ce0d7"
 
-keypair = "devops"
+keypair = "devops_samsonajulor"
 
 master-password = "devopspblproject"
 
-master-username = "david"
+master-username = "samsonajulor"
 
-# Ensure to this change to your accounbt number
-account_no = "123456789"
+account_no = "727708324964"
 
 tags = {
   Enviroment      = "production" 
-  Owner-Email     = "infradev-segun@darey.io"
+  Owner-Email     = "samsonajulor@gmail.com"
   Managed-By      = "Terraform"
-  Billing-Account = "1234567890"
+  Billing-Account = "727708324964"
 }
