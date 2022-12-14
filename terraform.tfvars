@@ -20,7 +20,7 @@ ami = "ami-09e67e426f25ce0d7"
 
 keypair = "devops_samsonajulor"
 
-master-password = "devopspblproject"
+master-password = "$Amson1234"
 
 master-username = "samsonajulor"
 

@@ -118,7 +118,7 @@ resource "aws_lb_target_group" "tooling-tgt" {
     unhealthy_threshold = 2
   }
 
-  name        = "david-tooling-tgt"
+  name        = "tooling-tgt"
   port        = 443
   protocol    = "HTTPS"
   target_type = "instance"
