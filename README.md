@@ -1,4 +1,17 @@
+creating vpcs and subnets
+![creating vpc](./gifs/vpc%20and%20subnets.gif)
 
+- creating elastic ip and gateways
+![lb and gateways](./gifs/eip_igw_nat.gif)
+
+- creating the route tables
+![route tables](./gifs/route%20tables.gif)
+
+- creating the load balancers and certificate
+![lb and cert](./gifs/sg_alb_cert.gif)
+
+- creating the launch templates and autoscaling groups
+![lt and autoscaling groups](./gifs/lt_asg.gif)
 ## install graphviz 
 sudo apt install graphviz
 
