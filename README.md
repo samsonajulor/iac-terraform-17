@@ -584,3 +584,7 @@ You should also have this file structure in the PBL folder.
 Run `terraform plan` and ensure everything works
 
 ![final folder structure](./images/final%20folder%20structure.png)
+
+- all done
+
+https://github.com/samsonajulor/iac-terraform-17/blob/6d7c2772ffa9e7556afe6544b83f6027e4b29c47/gifs/project%2017.mp4
