@@ -1477,6 +1477,4 @@ In addition to regular project submission include following:
 
 - all done
 
-<video width="100%" height="240" controls>
-  <source src="./gifs/project%2017.mp4" type="video/mp4">
-</video>
+[![project 17](https://res.cloudinary.com/marcomontalbano/image/upload/v1671122425/video_to_markdown/images/google-drive--1xWTqPb5iYA1khVG_QVtXABqTos0V4r5B-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://drive.google.com/file/d/1xWTqPb5iYA1khVG_QVtXABqTos0V4r5B/view?usp=share_link "project 17")
