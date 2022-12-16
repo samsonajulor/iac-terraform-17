@@ -1478,3 +1478,6 @@ In addition to regular project submission include following:
 - all done
 
 [![project 17](https://res.cloudinary.com/marcomontalbano/image/upload/v1671122425/video_to_markdown/images/google-drive--1xWTqPb5iYA1khVG_QVtXABqTos0V4r5B-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://drive.google.com/file/d/1xWTqPb5iYA1khVG_QVtXABqTos0V4r5B/view?usp=share_link "project 17")
+
+SIDE STUDY
+- [NETWORK CONCEPTS Documentation](https://docs.google.com/document/d/13w0IKkZj6QNSNUu-4pEHhLUGhCj7-3iaeBm5LGW8Uto/edit?usp=sharing)
